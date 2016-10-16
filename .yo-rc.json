@@ -1,0 +1,24 @@
+{
+    "generator-jhipster": {
+        "baseName": "AngularApp",
+        "packageName": "com.demo",
+        "packageFolder": "com/demo",
+        "authenticationType": "xauth",
+        "hibernateCache": "hazelcast",
+        "clusteredHttpSession": "hazelcast",
+        "websocket": "spring-websocket",
+        "databaseType": "sql",
+        "devDatabaseType": "h2Memory",
+        "prodDatabaseType": "mysql",
+        "searchEngine": "elasticsearch",
+        "useSass": true,
+        "buildTool": "gradle",
+        "frontendBuilder": "grunt",
+        "enableTranslation": false,
+        "enableSocialSignIn": false,
+        "rememberMeKey": "cd59b1d6f3a9a0f20b44d98ca69c817ad5e4f704",
+        "testFrameworks": [
+            "gatling"
+        ]
+    }
+}
