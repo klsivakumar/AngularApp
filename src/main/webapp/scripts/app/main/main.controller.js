@@ -5,5 +5,6 @@ angular.module('angularAppApp')
         Principal.identity().then(function(account) {
             $scope.account = account;
             $scope.isAuthenticated = Principal.isAuthenticated;
+            console.log("Authentication successfull");
         });
     });

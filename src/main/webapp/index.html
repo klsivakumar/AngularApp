@@ -36,9 +36,9 @@
 <div ng-if="isAuthenticated == true">
     <div ui-view="navbar" ng-cloak=""></div>
 </div>
-<div class="container">
-    <div class="well" ui-view="content"></div>
-    <div class="footer">
+<div class="wrapper">
+    <div ui-view="content"></div>
+    <div class="main-footer">
         <p translate="footer">Copyright@</p>
     </div>
 </div>

@@ -19,7 +19,7 @@ angular.module('angularAppApp')
        return {
                 link : function(scope, element, attr) {
                 element.on('click',  function(e) {
-                    var animationSpeed = 1000;
+                    var animationSpeed = 100;
                     if ((element.next().is('.treeview-menu')) && (element.next().is(':visible'))) {
                          //Close the menu
                          element.next().removeClass('menu-open');
