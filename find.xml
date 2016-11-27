@@ -1,7 +1,7 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="File '/home/siva/projects/AngularDemo/src/main/webapp/scripts/components/navbar/navbarnew.html'" />
-    <option name="defaultScopeName" value="File '/home/siva/projects/AngularDemo/src/main/webapp/scripts/components/navbar/navbarnew.html'" />
-    <option name="SEARCH_SCOPE" value="File '/home/siva/projects/AngularDemo/src/main/webapp/scripts/components/navbar/navbarnew.html'" />
+    <option name="customScope" value="File '/home/siva/projects/XMLParser/src/com/demo/Main.java'" />
+    <option name="defaultScopeName" value="File '/home/siva/projects/XMLParser/src/com/demo/Main.java'" />
+    <option name="SEARCH_SCOPE" value="File '/home/siva/projects/XMLParser/src/com/demo/Main.java'" />
   </component>
 </application>
