@@ -20,11 +20,7 @@ angular.module('angularAppApp', ['LocalStorageModule',
         });
 
         $rootScope.$on('$stateChangeSuccess',  function(event, toState, toParams, fromState, fromParams) {
-            console.log("inside on event");
-            console.log("To state is " ,toState);
-            console.log("authenticated", $rootScope.isAuthenticated);
-            var titleKey = 'AngularApp Demo' ;
-
+            var titleKey = 'AngularApp' ;
             // Remember previous state unless we've been redirected to login or we've just
             // reset the state memory after logout. If we're redirected to login, our
             // previousState is already set in the authExpiredInterceptor. If we're going
@@ -40,18 +36,16 @@ angular.module('angularAppApp', ['LocalStorageModule',
             }
             $window.document.title = titleKey;
             if( $rootScope.isAuthenticated==true){
-                $state.go('dashboard');
+                //$state.go('dashboard');
             }
         });
 
         $rootScope.back = function() {
-        console.log("inside rootscope");
             // If previous state is 'activate' or do not exist go to 'home'
             if ($rootScope.previousStateName === 'activate' || $state.get($rootScope.previousStateName) === null) {
                 //$state.go('login');
                 $state.go('dashboard');
             } else {
-                console.log('inside else block');
                 $state.go($rootScope.previousStateName, $rootScope.previousStateParams);
             }
         };

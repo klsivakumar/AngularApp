@@ -1,7 +1,7 @@
     'use strict';
 
     angular.module('angularAppApp')
-        .controller('NavbarController', function ($scope, $location, $state, Auth, Principal, ENV) {
+        .controller('NavbarController', function ($scope, $location,$anchorScroll, $state, Auth, Principal, ENV) {
             $scope.isAuthenticated = Principal.isAuthenticated;
             console.log("authenticated ", Principal.isAuthenticated);
             $scope.$state = $state;
@@ -15,6 +15,7 @@
                         console.log('inside toggle menu');
                         $scope.state = !$scope.state;
              };
+
             $scope.sections=[];
             $scope.sections.push(
                 {

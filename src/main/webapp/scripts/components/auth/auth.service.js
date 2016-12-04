@@ -35,10 +35,12 @@ angular.module('angularAppApp')
                 return Principal.identity(force)
                     .then(function() {
                         var isAuthenticated = Principal.isAuthenticated();
-                        console.log("to state in " ,$rootScope.toState);
+                        console.log("to state in " ,isAuthenticated);
                         // an authenticated user can't access to login and register pages
                         if (isAuthenticated && $rootScope.toState.parent === 'account' && ($rootScope.toState.name === 'login' || $rootScope.toState.name === 'register')) {
+
                             $state.go('home');
+
                         }
 
                         if ($rootScope.toState.data.authorities && $rootScope.toState.data.authorities.length > 0 && !Principal.hasAnyAuthority($rootScope.toState.data.authorities)) {
@@ -54,6 +56,8 @@ angular.module('angularAppApp')
 
                                 // now, send them to the signin state so they can log in
                                 $state.go('login');
+                                console.log("inside");
+
                             }
                         }
                     });
