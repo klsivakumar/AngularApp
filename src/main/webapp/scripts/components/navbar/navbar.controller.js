@@ -25,7 +25,8 @@
                                 name    : "Dashboard v1",
                                 icon    : "fa fa-circle-o"
 
-                             }]
+                             }],
+                    url: "dashboard"
 
                 },
                 {
@@ -42,11 +43,13 @@
                                {
                                 name    : "Boxed",
                                 icon    : "fa fa-circle-o"
-                             }]
+                             }],
+                    url: "dashboard"
                 },
                 {
                     menu : "Widgets",
                     icon : "fa fa-th",
+                    url: "dashboard"
                 },
                 {
                     menu : "Charts",
@@ -62,7 +65,8 @@
                                {
                                 name    : "Inline Charts",
                                 icon    : "fa fa-circle-o"
-                             }]
+                             }],
+                    url: "general-forms"
                 },
                 {
                     menu : "UI Elements",
@@ -81,7 +85,8 @@
                              },{
                                 name    : "Sliders",
                                 icon    : "fa fa-circle-o"
-                             }]
+                             }],
+                    url: "general-forms"
                 },
                 {
                     menu : "Forms",
@@ -97,7 +102,8 @@
                                {
                                 name    : "Editors",
                                 icon    : "fa fa-circle-o"
-                             }]
+                             }],
+                    url: "general-forms"
                 },
                 {
                     menu : "Tables",
@@ -109,7 +115,8 @@
                               },{
                               name    : "Data Tables",
                               icon    : "fa fa-circle-o"
-                              }]
+                              }],
+                    url: "general-forms"
                   }
 
 

@@ -25,6 +25,7 @@ angular.module('angularAppApp', ['LocalStorageModule',
             // reset the state memory after logout. If we're redirected to login, our
             // previousState is already set in the authExpiredInterceptor. If we're going
             // to login directly, we don't want to be sent to some previous state anyway
+            console.log("To State is",toState);
             if (toState.name != 'login' && $rootScope.previousStateName) {
               $rootScope.previousStateName = fromState.name;
               $rootScope.previousStateParams = fromParams;
@@ -44,7 +45,7 @@ angular.module('angularAppApp', ['LocalStorageModule',
             // If previous state is 'activate' or do not exist go to 'home'
             if ($rootScope.previousStateName === 'activate' || $state.get($rootScope.previousStateName) === null) {
                 //$state.go('login');
-                $state.go('dashboard');
+               $state.go('dashboard');
             } else {
                 $state.go($rootScope.previousStateName, $rootScope.previousStateParams);
             }
